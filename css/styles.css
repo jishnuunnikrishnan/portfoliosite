@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap');
+
+:root{
+    --header-height: 3.5rem;
+
+
+    --first-hue:250;
+    --sat:66%;
+    --lig:75%;
+    --second-hue:219;
+
+    --first-color:hsl(var(--first-hue),var(--sat),var(--lig)) ;
+    --first-color-alt:hsl(var(--first-hue),var(--sat),71%);
+    --title-color:hsl(var(--second-hue),15%,95%);
+    --text-color:hsl(var(--second-hue),8%,75%);
+    --text-color-light:hsl(var(--second-hue),4%,55%);
+    --body-color:hsl(var(--second-hue),48%,8%);
+    --container-color:hsl(var(--second-hue),32%,12%);
+
+    --body-font:'Roboto', sans-serif;
+    --biggest-font-size:1.75rem;
+    --h1-font-size:1.5rem;
+    --h2-font-size:1.25rem;
+    --h3-font-size:1rem;
+    --normal-font-size:.938rem;
+    --small-font-size:.813rem;
+    --smaller-font-size:.75rem;
+    --tiny-font-size:.625rem;
+
+    --font-medium:500;
+    --font-semibold:600;
+
+
+    --z-tooltip:10;
+    --z-fixed:100;
+    --z-modal:1000;
+
+}
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    border:0;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    background-color: var(--body-color);
+    color:var(--text-color);
+}
+
+.navs{
+    display: flex;
+    overflow: hidden;
+    background-color: tomato;
+    position: fixed;
+    top: 0;
+    width:100%;
+    height: 70px;
+    
+    justify-content: space-between;
+}
+.navs img{
+    width:30px;
+    height: 30px;
+    margin-left: 0%;
+    margin-right:500px;
+}
+.navs li{
+    color: var(--text-color);
+    cursor: pointer;
+}
+.navs > li > a:hover{
+    background-color: whitesmoke;
+    border-radius:10px;
+    color: black;
+
+}
+
+
+.container{
+    padding-top: 100px;
+    min-height: 700px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+
+.homecontainer{
+    margin: auto;
+    width: 75%;
+     
+}
+.homimg{
+    
+    border-radius: 50%;
+    max-height: 400px;
+}
+
+.homdata{
+    padding-top: 30px;
+    text-align:start;
+    position:inherit;
+
+}
+
+.hombuttons{
+    padding-top: 30px;
+}
+.hombuttons a{
+    cursor: pointer;
+    text-decoration: none;
+}
+.hombuttons button:hover{
+    background-color: lawngreen;
+}
+
+.homend{
+    padding-bottom:0px;
+    margin-bottom: 10px;
+    height: 25px;
+    border-width: 0;
+    color: rgb(235, 21, 21);
+    background-color:tomato;
+}
+
+.abt{
+text-align: center;
+    color:var(--body-color);
+}
+.abtcontainer{
+    margin-top: 200px;
+    width:60%;
+    
+    margin: auto;
+}
+
+.abta{
+    color:rgb(230, 179, 14);
+    text-align: start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.abtb{
+    color:tomato;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.abtbuttons{
+padding-top: 20px;
+}
+.abtbuttons a{
+    cursor: pointer;
+    text-decoration: none;
+}
+.abtbuttons button:hover{
+    background-color: rgb(75, 81, 143);
+    
+}
+.educ{
+    text-align: center;
+        color:tomato;
+    }
+
+    .educcontainer{
+        margin: auto;
+        margin-top: 30px;
+         
+    }
+    .cards{
+        position:inherit;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: 0.25rem;
+}
+
+.skillscontainer{
+    margin: auto;
+    margin-top: 30px;
+     
+}
+.skilbuttons{
+    padding-top: 20px;
+    text-decoration: whitesmoke;
+    }
+    .skilbuttons a{
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .skilbuttons button:hover{
+        background-color: rgb(241, 245, 8);
+        
+    }
+.workcontainer{
+    margin: auto;
+    margin-top: 30px;
+     
+}
+.carder{
+    margin-top: 20px;
+    text-align: center;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 0.25rem;
+    
+}
+#detail{
+    display: none;
+    color: red;
+    text-align: left;
+}
+#details{
+    display: none;
+    color: red;
+    text-align: left;
+}
+.card-tex.show-more .detail{
+    display: inline;
+}
+#buttdet{
+    
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.5;
+        color: whitesmoke;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        background-color: black;
+        border: 1px solid rgb(229, 253, 7);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        border-radius: 0.25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+#buttless{
+    
+    display:none;
+    font-weight: 400;
+    line-height: 1.5;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color:black;
+    border: 1px solid rgb(236, 236, 14);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+#buttdets{
+    
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: black;
+    border: 1px solid rgb(229, 253, 7);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#buttlesss{
+
+display:none;
+font-weight: 400;
+line-height: 1.5;
+color: whitesmoke;
+text-align: center;
+text-decoration: none;
+vertical-align: middle;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+user-select: none;
+background-color:black;
+border: 1px solid rgb(236, 236, 14);
+padding: 0.375rem 0.75rem;
+font-size: 1rem;
+border-radius: 0.25rem;
+transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+.foot{
+   
+    margin-top: 50px;
+   display: block;
+   
+}
+.end{
+    min-height: 50px;
+    background-color: tomato;
+}
+
+.ex{
+    background-color: tomato;
+}
+.px{
+    
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+
+}
+.px li{
+    color: var(--text-color);
+}
+.px > li > a:hover{
+    background-color: whitesmoke;
+    border-radius:10px;
+    color: black;
+
+}
