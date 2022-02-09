@@ -188,7 +188,7 @@ padding-top: 20px;
 }
 
 .skillscontainer{
-    margin: auto;
+    
     margin-top: 30px;
      
 }
@@ -353,3 +353,35 @@ transition: color .15s ease-in-out,background-color .15s ease-in-out,border-colo
     color: black;
 
 }
+
+.portcontainer{
+margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+    
+    
+
+     
+}
+.pcontainer{
+    padding-top: 100px;
+    min-height: 400px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+
+.portbuttons{
+    margin-left: 60px;
+    padding-top: 50px;
+    text-decoration: whitesmoke;
+    }
+    .portbuttons a{
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .portbuttons button:hover{
+        background-color: rgb(241, 245, 8);
+        
+    }
